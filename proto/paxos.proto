@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package paxoskv;
+package paxos;
 
 // PaxosKV defines the paxos RPC.
 //
@@ -68,3 +68,5 @@ message Proposer {
     // Val is the value a Proposer has chosen.
     Value Val = 3;
 }
+option go_package = "paxos/proto";
+
